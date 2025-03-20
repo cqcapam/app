@@ -61,7 +61,7 @@ st.markdown(
 )
 
 # Conteúdo principal
-title = "Bem-vindo ao Aplicativo CQ - CAPAM"
+title = "Tudo pronto para você!"
 description = "Aqui você pode baixar a versão mais recente do aplicativo e seguir o tutorial para configurá-lo."
 
 st.markdown(f"""
