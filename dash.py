@@ -89,7 +89,7 @@ st.markdown(
         <h1>Bem-vindo ao Aplicativo CQ - CAPAM</h1>
         <p>Aqui você pode baixar a versão mais recente do aplicativo e seguir o tutorial para configurá-lo.</p>
 
-        <h2>📋 Tutorial Passo a Passo</h2>
+        <p>📋 Tutorial Passo a Passo</h2>
         <ol>
             <li><strong>Faça o download do arquivo</strong>:
                 <ul>
