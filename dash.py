@@ -21,7 +21,7 @@ st.markdown(
 
     /* Quadrado branco semi-transparente */
     .main {
-        background-color: rgba(255, 255, 255, 0.9);  /* Branco com 90% de opacidade */
+        background-color: rgba(0, 0, 0, 0.5);  /* Preto com 50% de opacidade */
         padding: 2rem;
         border-radius: 10px;
         margin: 2rem auto;
@@ -34,25 +34,28 @@ st.markdown(
 
     /* Estilo dos títulos */
     h1 {
-        color: #2c3e50;  /* Azul marinho */
+        color: white !important;  /* Texto branco */
         text-align: center;
         margin-bottom: 1.5rem;
+        font-weight: bold;  /* Negrito */
     }
 
     h2 {
-        color: #34495e;  /* Azul marinho mais escuro */
+        color: white !important;  /* Texto branco */
         margin-top: 1.5rem;
+        font-weight: bold;  /* Negrito */
     }
 
     /* Estilo dos botões */
     .stButton button {
         background-color: #3498db;  /* Azul */
-        color: white;
+        color: white !important;  /* Texto branco */
         border-radius: 5px;
         padding: 10px 20px;
         font-size: 16px;
         width: 100%;
         margin-top: 1rem;
+        font-weight: bold;  /* Negrito */
     }
 
     .stButton button:hover {
@@ -61,16 +64,18 @@ st.markdown(
 
     /* Estilo do texto */
     .stMarkdown {
-        color: #2c3e50;  /* Azul marinho */
+        color: white !important;  /* Texto branco */
         font-size: 16px;
         line-height: 1.6;
+        font-weight: bold;  /* Negrito */
     }
 
     /* Rodapé */
     .footer {
         text-align: center;
         margin-top: 2rem;
-        color: #7f8c8d;  /* Cinza */
+        color: white !important;  /* Texto branco */
+        font-weight: bold;  /* Negrito */
     }
     </style>
     """,
