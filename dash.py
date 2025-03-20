@@ -27,7 +27,7 @@ st.markdown(
         margin: 2rem auto;
         max-width: 800px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        min-height: 500px;  /* Altura mínima de 500 pixels */
+        min-height: 700px;  /* Altura mínima de 500 pixels */
     }
 
     /* Estilo dos títulos */
