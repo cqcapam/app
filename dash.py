@@ -55,18 +55,17 @@ st.markdown(
         color: white !important;
         font-weight: bold;
     }
-    /* Esconde a barra superior do Streamlit */
-    #MainMenu {visibility: hidden;}
-    header {visibility: hidden;}
-    footer {visibility: hidden;}
     </style>
     """,
     unsafe_allow_html=True,
 )
 
 # Conteúdo principal
-title = "Tudo pronto para você!"
+title = "Bem-vindo ao Aplicativo CQ - CAPAM"
 description = "Aqui você pode baixar a versão mais recente do aplicativo e seguir o tutorial para configurá-lo."
+
+# Link de download do MediaFire
+download_link = "https://www.mediafire.com/file/46d97p0sgngi3cn/apptk.exe/file"
 
 st.markdown(f"""
     <div class="main">
@@ -90,14 +89,11 @@ st.markdown(f"""
                 <ul><li>Execute o aplicativo e comece a usá-lo!</li></ul>
             </li>
         </ol>
-        <a href="https://drive.google.com/uc?export=download&id=1WqNoQVPCMeJHQqy3N55Voi5uXjd6dxKy" download="apptk.exe">
-    <button class="stButton">📥 Baixar Executável</button>
+        <a href="{download_link}" target="_blank">
+            <button class="stButton">📥 Baixar Executável</button>
         </a>
         <div class="footer">
-            <p>Desenvolvido com ❤️ por Jade Santiago</p>
+            <p>Desenvolvido com ❤️ por CAPAM - Controle de Qualidade</p>
         </div>
     </div>
 """, unsafe_allow_html=True)
-
-# Mensagem de aviso sobre o Google Drive
-st.warning("O Google Drive pode exibir um aviso de segurança ao baixar arquivos grandes. Clique em 'Download Anyway' para continuar.")
