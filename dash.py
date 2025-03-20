@@ -64,8 +64,8 @@ st.markdown(
 title = "Bem-vindo ao Aplicativo CQ - CAPAM"
 description = "Aqui você pode baixar a versão mais recente do aplicativo e seguir o tutorial para configurá-lo."
 
-# Link de download do MediaFire
-download_link = "https://www.mediafire.com/file/46d97p0sgngi3cn/apptk.exe/file"
+# Link direto do Google Drive
+download_link = "https://drive.google.com/uc?export=download&id=1WqNoQVPCMeJHQqy3N55Voi5uXjd6dxKy"
 
 st.markdown(f"""
     <div class="main">
@@ -97,3 +97,6 @@ st.markdown(f"""
         </div>
     </div>
 """, unsafe_allow_html=True)
+
+# Mensagem de aviso sobre o Google Drive
+st.warning("O Google Drive pode exibir um aviso de segurança ao baixar arquivos grandes. Clique em 'Download Anyway' para continuar.")
