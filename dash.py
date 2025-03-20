@@ -92,7 +92,7 @@ with st.container():
     st.write("Aqui você pode baixar a versão mais recente do aplicativo e seguir o tutorial para configurá-lo.")
 
     # Tutorial
-    st.header("📋 Tutorial Passo a Passo")
+    st.header("📋 Tutorial Passo a Passopp")
     st.markdown(
         """
         1. **Faça o download do arquivo**:
