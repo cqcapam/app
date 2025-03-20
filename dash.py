@@ -3,7 +3,7 @@ import streamlit as st
 
 # Configurações da página
 st.set_page_config(
-    page_title="Aplicativo CQ - CAPAM",
+    page_title="Aplicativo CQ - CAPAMMM",
     page_icon="📥",
     layout="centered",
 )
