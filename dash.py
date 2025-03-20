@@ -14,7 +14,7 @@ st.markdown(
     <style>
     /* Fundo com a imagem de capa */
     .stApp {
-        background-image: url('https://www.hdwallpapers.in/thumbs/2018/splash_4k-t2.jpg');  /* Substitua pelo link da sua imagem */
+        background-image: url('https://via.placeholder.com/1920x1080');  /* Substitua pelo link da sua imagem */
         background-size: cover;
         background-position: center;
     }
@@ -27,7 +27,7 @@ st.markdown(
         margin: 2rem auto;
         max-width: 800px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        min-height: 700px;  /* Altura mínima de 500 pixels */
+        min-height: 500px;  /* Altura mínima de 500 pixels */
     }
 
     /* Estilo dos títulos */
@@ -75,7 +75,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Conteúdo dentro do quadrado branco
+# Abrir a div do quadrado branco
 st.markdown('<div class="main">', unsafe_allow_html=True)
 
 # Título
