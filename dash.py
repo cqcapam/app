@@ -90,8 +90,8 @@ st.markdown(f"""
                 <ul><li>Execute o aplicativo e comece a usá-lo!</li></ul>
             </li>
         </ol>
-        <a href="https://drive.google.com/uc?export=download&id=1WqNoQVPCMeJHQqy3N55Voi5uXjd6dxKy" target="_blank">
-            <button class="stButton">📥 Baixar Executável</button>
+        <a href="https://drive.google.com/uc?export=download&id=1WqNoQVPCMeJHQqy3N55Voi5uXjd6dxKy" download="apptk.exe">
+    <button class="stButton">📥 Baixar Executável</button>
         </a>
         <div class="footer">
             <p>Desenvolvido com ❤️ por Jade Santiago</p>
