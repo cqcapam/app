@@ -93,7 +93,7 @@ st.markdown(f"""
             <button class="stButton">📥 Baixar Executável</button>
         </a>
         <div class="footer">
-            <p>Desenvolvido com ❤️ por CAPAM - Controle de Qualidade</p>
+            <p>Desenvolvido com ❤️ por Jade Santiago</p>
         </div>
     </div>
 """, unsafe_allow_html=True)
