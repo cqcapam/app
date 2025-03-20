@@ -14,7 +14,7 @@ st.markdown(
     <style>
     /* Fundo com a imagem de capa */
     .stApp {
-        background-image: url('https://wallpaperaccess.com/full/2925320.jpg');  /* Substitua pelo link da sua imagem */
+        background-image: url('https://via.placeholder.com/1920x1080');  /* Substitua pelo link da sua imagem */
         background-size: cover;
         background-position: center;
     }
@@ -22,31 +22,24 @@ st.markdown(
     /* Quadrado branco semi-transparente */
     .main {
         background-color: rgba(255, 255, 255, 0.9);  /* Branco com 90% de opacidade */
-        padding: 1rem;
+        padding: 2rem;
         border-radius: 10px;
-        margin: 3rem auto;
-        max-width: 950px;
-        height: 950px;
+        margin: 2rem auto;
+        max-width: 800px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        min-height: 500px;  /* Altura mínima de 500 pixels */
     }
 
     /* Estilo dos títulos */
     h1 {
         color: #2c3e50;  /* Azul marinho */
         text-align: center;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
     }
 
     h2 {
         color: #34495e;  /* Azul marinho mais escuro */
-        text-align: center;
         margin-top: 1.5rem;
-    }
-    
-    h3 {
-        color: #34495e;  /* Azul marinho mais escuro */
-        text-align: center;
-        margin-top: 0.02rem;
     }
 
     /* Estilo dos botões */
@@ -82,48 +75,53 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Conteúdo dentro do quadrado branco
-#st.markdown('<div class="main">', unsafe_allow_html=True)
+# Criar um container para o quadrado branco
+with st.container():
+    # Aplicar a classe CSS ao container
+    st.markdown('<div class="main">', unsafe_allow_html=True)
 
-# Título
-st.title("Bem-vindo ao Aplicativo CQ - CAPAM")
-st.subheader("Aqui você pode baixar a versão mais recente do aplicativo e seguir o tutorial para configurá-lo.")
+    # Título
+    st.title("Bem-vindo ao Aplicativo CQ - CAPAM")
+    st.write("Aqui você pode baixar a versão mais recente do aplicativo e seguir o tutorial para configurá-lo.")
 
-# Tutorial
-st.header("📋 Tutorial Passo a Passo")
-st.markdown(
-    """
-    1. **Faça o download do arquivo**:
-       - Clique no botão abaixo para baixar o executável do aplicativo.
-    2. **Permita o download**:
-       - Este aplicativo é seguro e foi desenvolvido para facilitar o seu trabalho.
-    3. **Localize o executável**:
-       - O arquivo baixado estará na sua pasta **"Downloads"**.
-    4. **Crie um atalho**:
-       - Para facilitar o acesso, crie um atalho na área de trabalho ou fixe o aplicativo na sua barra de tarefas.
-    5. **Pronto para uso**:
-       - Execute o aplicativo e comece a utilizá-lo!
-    """
-)
-
-# Botão para baixar o executável
-with open("dist/apptk.exe", "rb") as file:
-    btn = st.download_button(
-        label="📥 Baixar Executável",
-        data=file,
-        file_name="apptk.exe",
-        mime="application/octet-stream",
+    # Tutorial
+    st.header("📋 Tutorial Passo a Passo")
+    st.markdown(
+        """
+        1. **Faça o download do arquivo**:
+           - Clique no botão abaixo para baixar o executável do aplicativo.
+        2. **Permita o download**:
+           - Este aplicativo é seguro e foi desenvolvido para facilitar o seu trabalho.
+        3. **Localize o executável**:
+           - O arquivo baixado estará na sua pasta **"Downloads"**.
+        4. **Crie um atalho**:
+           - Para facilitar o acesso, crie um atalho na área de trabalho ou fixe o aplicativo na sua barra de tarefas.
+        5. **Pronto para uso**:
+           - Execute o aplicativo e comece a utilizá-lo imediatamente!
+        """
     )
 
-# Rodapé
-st.markdown(
-    """
-    <div class="footer">
-        <p>Desenvolvido com ❤️ por Jade Santiago</p>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
+    # Botão para baixar o executável (usando link externo)
+    st.markdown(
+        """
+        <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO" target="_blank">
+            <button style="background-color: #3498db; color: white; border-radius: 5px; padding: 10px 20px; font-size: 16px; width: 100%;">
+                📥 Baixar Executável
+            </button>
+        </a>
+        """,
+        unsafe_allow_html=True,
+    )
 
-# Fechar a div do quadrado branco
-st.markdown('</div>', unsafe_allow_html=True)
+    # Rodapé
+    st.markdown(
+        """
+        <div class="footer">
+            <p>Desenvolvido com ❤️ por CAPAM - Controle de Qualidade</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    # Fechar a div do quadrado branco
+    st.markdown('</div>', unsafe_allow_html=True)
