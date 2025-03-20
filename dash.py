@@ -83,7 +83,7 @@ with st.container():
     st.markdown('<div class="main">', unsafe_allow_html=True)
 
     # Título
-    st.title("Bem-vindo ao Aplicativo CQ")
+    st.title("Bem-vindo ao Aplicativo CQ - CAPAM")
     st.write("Aqui você pode baixar a versão mais recente do aplicativo e seguir o tutorial para configurá-lo.")
 
     # Tutorial
