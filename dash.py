@@ -55,6 +55,10 @@ st.markdown(
         color: white !important;
         font-weight: bold;
     }
+    /* Esconde a barra superior do Streamlit */
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
     </style>
     """,
     unsafe_allow_html=True,
