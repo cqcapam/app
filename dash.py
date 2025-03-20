@@ -19,7 +19,7 @@ st.markdown(
         background-position: center;
     }
 
-    /* Quadrado branco semi-transparente */
+    /* Quadrado preto semi-transparente */
     .main {
         background-color: rgba(0, 0, 0, 0.5);  /* Preto com 50% de opacidade */
         padding: 2rem;
@@ -82,7 +82,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Criar um container para o quadrado branco
+# Criar um container para o quadrado preto
 with st.container():
     # Aplicar a classe CSS ao container
     st.markdown('<div class="main">', unsafe_allow_html=True)
@@ -130,5 +130,5 @@ with st.container():
         unsafe_allow_html=True,
     )
 
-    # Fechar a div do quadrado branco
+    # Fechar a div do quadrado preto
     st.markdown('</div>', unsafe_allow_html=True)
