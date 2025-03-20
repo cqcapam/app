@@ -14,7 +14,7 @@ st.markdown(
     <style>
     /* Fundo com a imagem de capa */
     .stApp {
-        background-image: url('https://via.placeholder.com/1920x1080');  /* Substitua pelo link da sua imagem */
+        background-image: url('https://www.hdwallpapers.in/thumbs/2018/splash_4k-t2.jpg');  /* Substitua pelo link da sua imagem */
         background-size: cover;
         background-position: center;
     }
