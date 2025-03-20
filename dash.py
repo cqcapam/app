@@ -25,9 +25,15 @@ st.markdown(
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         min-height: 500px;
     }
-    h1, h2, p, li {
+    h1, h2, p {
         color: white !important;
         text-align: center;
+        font-weight: bold;
+    }
+    ol, ul, li {
+        color: white !important;
+        text-align: left;  /* Alinha o texto à esquerda */
+        font-size: 14px;  /* Tamanho da fonte menor */
         font-weight: bold;
     }
     .stButton button {
