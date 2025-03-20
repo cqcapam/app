@@ -18,30 +18,32 @@ st.markdown(
         background-position: center;
     }
 
-    /* Container centralizado */
+    /* Centralizar conteúdo */
     .main-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: auto;
+        padding: 50px 0;
     }
 
-    /* Quadrado branco semi-transparente */
+    /* Quadrado branco para o conteúdo */
     .main {
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 0.95);
         padding: 2rem;
         border-radius: 10px;
         max-width: 800px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         position: relative;
-        z-index: 2; /* Mantém o conteúdo à frente */
+        z-index: 2;
+        text-align: center;
     }
 
     /* Estilo dos títulos */
     h1, h2, .stMarkdown {
         color: #2c3e50;
-        text-align: center;
-        z-index: 3; /* Certifica que o texto está na frente */
+        z-index: 3;
+        position: relative;
     }
 
     /* Estilo dos botões */
@@ -53,6 +55,8 @@ st.markdown(
         font-size: 16px;
         width: 100%;
         margin-top: 1rem;
+        border: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
     .stButton button:hover {
         background-color: #2980b9;
@@ -98,7 +102,7 @@ st.markdown(
 st.markdown(
     """
     <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO" target="_blank">
-        <button style="background-color: #3498db; color: white; border-radius: 5px; padding: 10px 20px; font-size: 16px; width: 100%;">
+        <button style="background-color: #3498db; color: white; border-radius: 5px; padding: 10px 20px; font-size: 16px; width: 100%; border: none;">
             📥 Baixar Executável
         </button>
     </a>
