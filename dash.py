@@ -28,6 +28,8 @@ st.markdown(
         max-width: 800px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         min-height: 500px;  /* Altura mínima de 500 pixels */
+        position: relative;  /* Permite sobrepor elementos */
+        z-index: 1;  /* Define a ordem de sobreposição */
     }
 
     /* Estilo dos títulos */
