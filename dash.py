@@ -17,7 +17,7 @@ st.markdown(
         background-position: center;
     }
     .main {
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.7);
         padding: 2rem;
         border-radius: 10px;
         margin: 2rem auto;
