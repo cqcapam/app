@@ -103,4 +103,4 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # Mensagem de aviso sobre o Google Drive
-st.warning("O Google Drive pode exibir um aviso de segurança ao baixar arquivos grandes. Clique em 'Download Anyway' para continuar.")
+st.warning("O Google Drive pode exibir um aviso de segurança ao baixar arquivos grandes. Clique em 'Fazer Download mesmo assim' para continuar.")
