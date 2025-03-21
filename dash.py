@@ -12,7 +12,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url('https://wallpapercave.com/wp/wp2037509.jpg');
+        background-image: url('https://images6.alphacoders.com/330/thumb-1920-330900.jpg');
         background-size: cover;
         background-position: center;
     }
