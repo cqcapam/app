@@ -7,7 +7,7 @@ st.set_page_config(
     layout="centered",
 )
 
-# CSS personalizado para estilizar o botão
+# CSS personalizado
 st.markdown(
     """
     <style>
@@ -32,26 +32,26 @@ st.markdown(
     }
     ol, ul, li {
         color: black !important; /* Texto preto */
-        text-align: left;
-        font-size: 14px;
+        text-align: left;  /* Alinha o texto à esquerda */
+        font-size: 14px;  /* Tamanho da fonte menor */
         font-weight: bold;
     }
     .button-container {
         text-align: center; /* Centraliza o botão */
         margin-top: 20px;
     }
-    .stButton button {
-        background-color: #007BFF !important; /* Azul */
-        color: white !important;
-        border: none !important;
-        border-radius: 5px !important;
-        padding: 10px 20px !important;
-        font-size: 16px !important;
-        font-weight: bold !important;
-        cursor: pointer !important;
+    .custom-button {
+        background-color: #007BFF; /* Azul */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
     }
-    .stButton button:hover {
-        background-color: #0056b3 !important;
+    .custom-button:hover {
+        background-color: #0056b3;
     }
     .footer {
         text-align: center;
@@ -97,14 +97,19 @@ st.markdown(f"""
                 <ul><li>Execute o aplicativo e comece a usá-lo!</li></ul>
             </li>
         </ol>
+        <div class="button-container">
+            <button class="custom-button" onclick="showWarning()">📥 Baixar Executável</button>
+        </div>
         <div class="footer">
             <p>Desenvolvido com ❤️ por Jade Santiago</p>
         </div>
     </div>
-""", unsafe_allow_html=True)
 
-# Lógica para exibir a mensagem antes do download
-if st.button("📥 Baixar Executável"):
-    st.warning("O Google Drive pode exibir um aviso de segurança ao baixar arquivos grandes. Clique em 'Estou Ciente' para continuar.")
-    if st.button("Estou Ciente"):
-        st.markdown(f'<meta http-equiv="refresh" content="0;url={download_link}">', unsafe_allow_html=True)
+    <script>
+        function showWarning() {
+            if (confirm("O Google Drive pode exibir um aviso de segurança ao baixar arquivos grandes. Clique em 'Estou Ciente' para continuar.")) {
+                window.open('{download_link}', '_blank');
+            }
+        }
+    </script>
+""", unsafe_allow_html=True)
