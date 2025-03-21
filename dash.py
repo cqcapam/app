@@ -86,7 +86,7 @@ st.markdown(f"""
                 <ul><li>Para facilitar o acesso, crie um atalho na área de trabalho.</li></ul>
             </li>
             <li><strong>Pronto para uso:</strong>
-                <ul><li>Execute o aplicativo e comece a usá-lo!</li></ul>
+                <li>Execute o aplicativo e comece a usá-lo!</li>
             </li>
         </ol>
         <a href="{download_link}" target="_blank">
