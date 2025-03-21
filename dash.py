@@ -55,13 +55,17 @@ st.markdown(
         color: white !important;
         font-weight: bold;
     }
+    /* Esconde a barra superior do Streamlit */
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
     </style>
     """,
     unsafe_allow_html=True,
 )
 
 # Conteúdo principal
-title = "Bem-vindo ao Aplicativo CQ - CAPAM"
+title = "Bem-vindo ao Aplicativo CQ CAPAM"
 description = "Aqui você pode baixar a versão mais recente do aplicativo e seguir o tutorial para configurá-lo."
 
 # Link direto do Google Drive
@@ -86,7 +90,7 @@ st.markdown(f"""
                 <ul><li>Para facilitar o acesso, crie um atalho na área de trabalho.</li></ul>
             </li>
             <li><strong>Pronto para uso:</strong>
-                <li>Execute o aplicativo e comece a usá-lo!</li>
+                <ul><li>Execute o aplicativo e comece a usá-lo!</li></ul>
             </li>
         </ol>
         <a href="{download_link}" target="_blank">
