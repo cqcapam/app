@@ -40,16 +40,18 @@ st.markdown(
         text-align: center; /* Centraliza o botão */
         margin-top: 20px;
     }
-    .stButton button {
-        background-color: #3498db;
-        color: white !important;
+    .custom-button {
+        background-color: #007BFF; /* Azul */
+        color: white;
+        border: none;
         border-radius: 5px;
         padding: 10px 20px;
         font-size: 16px;
         font-weight: bold;
+        cursor: pointer;
     }
-    .stButton button:hover {
-        background-color: #2980b9;
+    .custom-button:hover {
+        background-color: #0056b3;
     }
     .footer {
         text-align: center;
@@ -96,15 +98,18 @@ st.markdown(f"""
             </li>
         </ol>
         <div class="button-container">
-            <a href="{download_link}" target="_blank">
-                <button class="stButton">📥 Baixar Executável</button>
-            </a>
+            <button class="custom-button" onclick="showWarning()">📥 Baixar Executável</button>
         </div>
         <div class="footer">
             <p>Desenvolvido com ❤️ por Jade Santiago</p>
         </div>
     </div>
-""", unsafe_allow_html=True)
 
-# Mensagem de aviso sobre o Google Drive
-st.warning("O Google Drive pode exibir um aviso de segurança ao baixar arquivos grandes. Clique em 'Fazer Download mesmo assim' para continuar.")
+    <script>
+        function showWarning() {
+            if (confirm("O Google Drive pode exibir um aviso de segurança ao baixar arquivos grandes. Clique em 'Estou Ciente' para continuar.")) {
+                window.open('{download_link}', '_blank');
+            }
+        }
+    </script>
+""", unsafe_allow_html=True)
