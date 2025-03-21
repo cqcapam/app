@@ -12,12 +12,12 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url('https://ayurvedasalud.com/wp-content/uploads/2019/02/hd-wallpaper-macro-splash-67843-1024x678.jpg');
+        background-image: url('https://wallpapercave.com/wp/wp2037509.jpg');
         background-size: cover;
         background-position: center;
     }
     .main {
-        background-color: rgba(255, 255, 255, 0.95); /* Fundo branco */
+        background-color: rgba(255, 255, 255, 0.9); /* Fundo branco */
         padding: 2rem;
         border-radius: 10px;
         margin: 2rem auto;
@@ -40,18 +40,16 @@ st.markdown(
         text-align: center; /* Centraliza o botão */
         margin-top: 20px;
     }
-    .custom-button {
-        background-color: #007BFF; /* Azul */
-        color: white;
-        border: none;
+    .stButton button {
+        background-color: #3498db;
+        color: white !important;
         border-radius: 5px;
         padding: 10px 20px;
         font-size: 16px;
         font-weight: bold;
-        cursor: pointer;
     }
-    .custom-button:hover {
-        background-color: #0056b3;
+    .stButton button:hover {
+        background-color: #2980b9;
     }
     .footer {
         text-align: center;
@@ -98,18 +96,15 @@ st.markdown(f"""
             </li>
         </ol>
         <div class="button-container">
-            <button class="custom-button" onclick="showWarning()">📥 Baixar Executável</button>
+            <a href="{download_link}" target="_blank">
+                <button class="stButton">📥 Baixar Executável</button>
+            </a>
         </div>
         <div class="footer">
             <p>Desenvolvido com ❤️ por Jade Santiago</p>
         </div>
     </div>
-
-    <script>
-        function showWarning() {
-            if (confirm("O Google Drive pode exibir um aviso de segurança ao baixar arquivos grandes. Clique em 'Estou Ciente' para continuar.")) {
-                window.open('{download_link}', '_blank');
-            }
-        }
-    </script>
 """, unsafe_allow_html=True)
+
+# Mensagem de aviso sobre o Google Drive
+st.warning("O Google Drive pode exibir um aviso de segurança ao baixar arquivos grandes. Clique em 'Fazer Download mesmo assim' para continuar.")
