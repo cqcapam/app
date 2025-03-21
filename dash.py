@@ -31,13 +31,13 @@ st.markdown(
         font-weight: bold;
     }
     ol, ul, li {
-        color: black !important; /* Texto preto */
-        text-align: left;  /* Alinha o texto à esquerda */
-        font-size: 14px;  /* Tamanho da fonte menor */
+        color: black !important;
+        text-align: left;
+        font-size: 14px;
         font-weight: bold;
     }
     .button-container {
-        text-align: center; /* Centraliza o botão */
+        text-align: center;
         margin-top: 20px;
     }
     .stButton button {
@@ -54,9 +54,19 @@ st.markdown(
     .footer {
         text-align: center;
         margin-top: 2rem;
-        color: black !important; /* Texto preto */
+        color: black !important;
         font-weight: bold;
     }
+    
+    /* Personaliza a cor do st.warning */
+    div.stAlert {
+        background-color: white !important; /* Fundo branco */
+        color: black !important; /* Texto preto */
+        border-left: 5px solid #ffcc00 !important; /* Bordas amarelas para manter um destaque */
+        padding: 10px !important;
+        font-weight: bold !important;
+    }
+
     /* Esconde a barra superior do Streamlit */
     #MainMenu {visibility: hidden;}
     header {visibility: hidden;}
