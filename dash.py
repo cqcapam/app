@@ -17,7 +17,7 @@ st.markdown(
         background-position: center;
     }
     .main {
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(255, 255, 255, 0.9); /* Fundo branco */
         padding: 2rem;
         border-radius: 10px;
         margin: 2rem auto;
@@ -26,12 +26,12 @@ st.markdown(
         min-height: 500px;
     }
     h1, h2, p {
-        color: white !important;
+        color: black !important; /* Texto preto */
         text-align: center;
         font-weight: bold;
     }
     ol, ul, li {
-        color: white !important;
+        color: black !important; /* Texto preto */
         text-align: left;  /* Alinha o texto à esquerda */
         font-size: 14px;  /* Tamanho da fonte menor */
         font-weight: bold;
@@ -52,7 +52,7 @@ st.markdown(
     .footer {
         text-align: center;
         margin-top: 2rem;
-        color: white !important;
+        color: black !important; /* Texto preto */
         font-weight: bold;
     }
     /* Esconde a barra superior do Streamlit */
@@ -65,7 +65,7 @@ st.markdown(
 )
 
 # Conteúdo principal
-title = "Bem-vindo ao Aplicativo CQ CAPAM"
+title = "Tudo pronto para você!"
 description = "Aqui você pode baixar a versão mais recente do aplicativo e seguir o tutorial para configurá-lo."
 
 # Link direto do Google Drive
