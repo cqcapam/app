@@ -12,7 +12,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url('https://wallpapercave.com/wp/wp2037509.jpg');
+        background-image: url('https://ayurvedasalud.com/wp-content/uploads/2019/02/hd-wallpaper-macro-splash-67843-1024x678.jpg');
         background-size: cover;
         background-position: center;
     }
