@@ -12,7 +12,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url('https://images6.alphacoders.com/330/thumb-1920-330900.jpg');
+        background-image: url('https://wallpapercave.com/wp/wp2037509.jpg');
         background-size: cover;
         background-position: center;
     }
@@ -36,14 +36,16 @@ st.markdown(
         font-size: 14px;  /* Tamanho da fonte menor */
         font-weight: bold;
     }
+    .button-container {
+        text-align: center; /* Centraliza o botão */
+        margin-top: 20px;
+    }
     .stButton button {
         background-color: #3498db;
         color: white !important;
         border-radius: 5px;
         padding: 10px 20px;
         font-size: 16px;
-        width: 100%;
-        margin-top: 1rem;
         font-weight: bold;
     }
     .stButton button:hover {
@@ -93,9 +95,11 @@ st.markdown(f"""
                 <ul><li>Execute o aplicativo e comece a usá-lo!</li></ul>
             </li>
         </ol>
-        <a href="{download_link}" target="_blank">
-            <button class="stButton">📥 Baixar Executável</button>
-        </a>
+        <div class="button-container">
+            <a href="{download_link}" target="_blank">
+                <button class="stButton">📥 Baixar Executável</button>
+            </a>
+        </div>
         <div class="footer">
             <p>Desenvolvido com ❤️ por Jade Santiago</p>
         </div>
