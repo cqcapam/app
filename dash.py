@@ -17,23 +17,18 @@ st.markdown(
         background-position: center;
     }
     .main {
-        background-color: rgba(255, 255, 255, 0.9); /* Fundo branco */
+        background-color: rgba(255, 255, 255, 0.9);
         padding: 2rem;
         border-radius: 10px;
         margin: 2rem auto;
         max-width: 800px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         min-height: 500px;
+        text-align: center;
     }
     h1, h2, p {
-        color: black !important; /* Texto preto */
-        text-align: center;
-        font-weight: bold;
-    }
-    ol, ul, li {
         color: black !important;
-        text-align: left;
-        font-size: 14px;
+        text-align: center;
         font-weight: bold;
     }
     .button-container {
@@ -57,20 +52,6 @@ st.markdown(
         color: black !important;
         font-weight: bold;
     }
-    
-    /* Personaliza a cor do st.warning */
-    div.stAlert {
-        background-color: white !important; /* Fundo branco */
-        color: black !important; /* Texto preto */
-        border-left: 5px solid #ffcc00 !important; /* Bordas amarelas para manter um destaque */
-        padding: 10px !important;
-        font-weight: bold !important;
-    }
-
-    /* Esconde a barra superior do Streamlit */
-    #MainMenu {visibility: hidden;}
-    header {visibility: hidden;}
-    footer {visibility: hidden;}
     </style>
     """,
     unsafe_allow_html=True,
@@ -80,13 +61,13 @@ st.markdown(
 title = "Tudo pronto para você!"
 description = "Aqui você pode baixar a versão mais recente do aplicativo e seguir o tutorial para configurá-lo."
 
-# Link direto do Google Drive
 download_link = "https://drive.google.com/uc?export=download&id=1WqNoQVPCMeJHQqy3N55Voi5uXjd6dxKy"
 
-st.markdown(f"""
+st.markdown("""
     <div class="main">
-        <h1>{title}</h1>
-        <p>{description}</p>
+        <img src="logo.png" alt="Logo" width="150" height="150">
+        <h1>{}</h1>
+        <p>{}</p>
         <h2>📋 Tutorial Passo a Passo</h2>
         <ol>
             <li><strong>Faça o download do arquivo:</strong>
@@ -106,7 +87,7 @@ st.markdown(f"""
             </li>
         </ol>
         <div class="button-container">
-            <a href="{download_link}" target="_blank">
+            <a href="{}" target="_blank">
                 <button class="stButton">📥 Baixar Executável</button>
             </a>
         </div>
@@ -114,7 +95,7 @@ st.markdown(f"""
             <p>Desenvolvido com ❤️ por Jade Santiago</p>
         </div>
     </div>
-""", unsafe_allow_html=True)
+""".format(title, description, download_link), unsafe_allow_html=True)
 
 # Mensagem de aviso sobre o Google Drive
 st.warning("O Google Drive pode exibir um aviso de segurança ao baixar arquivos grandes. Clique em 'Fazer Download mesmo assim' para continuar.")
