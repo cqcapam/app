@@ -58,7 +58,7 @@ st.markdown(
 )
 
 # Conteúdo principal
-title = "Tudo pronto para você!"
+title = "Tudo pronto para você!!"
 description = "Aqui você pode baixar a versão mais recente do aplicativo e seguir o tutorial para configurá-lo."
 
 download_link = "https://drive.google.com/uc?export=download&id=1WqNoQVPCMeJHQqy3N55Voi5uXjd6dxKy"
